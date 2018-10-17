@@ -5,3 +5,7 @@ test('Moans if too early', () => {
   timeNow.setHours(11);
   expect(alarm.wakeup(timeNow)).toBe("Ugggggh its too early - I'm not waking up yet");
 });
+
+test('Snooze', () => {
+  expect(alarm.snooze()).toBe(10);
+});

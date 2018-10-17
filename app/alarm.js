@@ -11,6 +11,18 @@ function wakeup(currentTime) {
     }
 }
 
+function snooze() {
+
+    let snoozeAttempts = 0;
+
+    for(let i = 0; i < 10; i++ ) {
+        snoozeAttempts++
+    }
+
+    return snoozeAttempts;
+}
+
 module.exports = {
-    wakeup
+    wakeup,
+    snooze
 };

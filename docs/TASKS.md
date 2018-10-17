@@ -16,7 +16,7 @@ Person A writes the code and implements the function for task 5 and so on and so
 
 ## 1) Fixing the test
 
-There is currently 1 test - if you run the test `npm run test` you'll notice that it is failing.
+There is currently one test - if you run the test `npm run test` you'll notice that it is failing.
 
 Work out how to ensure this test now passes.
 
@@ -24,38 +24,47 @@ Work out how to ensure this test now passes.
 
 The code in the test itself does NOT need changing
 
-## 2) Write the test for a subtract function
+## 2) Write a test for checking lunch time.
 
-Add a new test that will check that the calculator now supports a subtract function.
+Lunch time is between Midday (12:00) and 2PM (14:00).
 
-**Hint**
-
-At this stage the test should FAIL.
-
-## 3) Implement the subtract function
-
-Update your application to implement a new function that will subtract two numbers and return the result.
-
-The test from task 2 should now pass.
-
-## 4) Write a test for a multiply function
-
-Add a new test that will check that the calculator now supports a multiply function.
+If the time of the alarm is between those times it should expect an alarm message of _Yessssss its lunch time!!!_
 
 **Hint**
 
 At this stage the test should FAIL.
 
-## 5) Implement the multiply function
+## 3) Update your wakeup function to handle lunch times
 
-Update your application to implement a new function that will multiply two numbers and return the result.
+Your wakeup function should now be updated to handle lunch time and once updated the test from task 2 should now pass.
 
-The test from task 4 should now pass.
+Also note any previous tests should continue to pass.
+
+## 4) Update the snooze function to be more relaxed
+
+The alarm must have had a personality transplant is now feeling more relaxed. Update it to allow 20 snoozes and don't forget your tests should still pass.
 
 
 # Written questions
 
 The following questions are intended to be answered with written answers (no coding required) and should re-enforce some of the learning you have completed.
 
-1) What might happen if we just created the date as a new date in the wakeup function? (This is a tough one...)
+1) What might happen if we just created the date as a new date (every time) in the wakeup function? Why does this make it difficult to test the function?
+
+So the code might look like this:
+
+```
+function wakeup() {
+
+    const currentHour = new Date().getHours();
+
+    if(currentHour > 12 ) {
+        return "Ugggggh its too early - I'm not waking up yet";
+    }
+    else {
+        return "Get up!! You're wasting the day";
+    }
+}
+```
+
 
