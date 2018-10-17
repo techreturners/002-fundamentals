@@ -1,0 +1,22 @@
+{
+  "name": "002-fundamentals",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techreturners/002-fundamentals.git"
+  },
+  "author": "Tech Returners",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/techreturners/002-fundamentals/issues"
+  },
+  "homepage": "https://github.com/techreturners/002-fundamentals#readme",
+  "devDependencies": {
+    "jest": "23.6.0"
+  }
+}
