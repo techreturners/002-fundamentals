@@ -28,7 +28,7 @@ The code in the test itself does NOT need changing
 
 Lunch time is between Midday (12:00) and 2PM (14:00).
 
-If the time of the alarm is between those times it should expect an alarm message of _Yessssss its lunch time!!!_
+If the time of the alarm is between those times it should expect an alarm message of "_Yessssss its lunch time!!!_"
 
 **Hint**
 
@@ -43,6 +43,16 @@ Also note any previous tests should continue to pass.
 ## 4) Update the snooze function to be more relaxed
 
 The alarm must have had a personality transplant is now feeling more relaxed. Update it to allow 20 snoozes and don't forget your tests should still pass.
+
+## 5) Using a different type of loop
+
+Convert the snooze function to use a `while` loop instead of a `for` loop.
+
+## 6) 'Switch' out your approach
+
+Convert the wakeup function to a switch statement instead of using an `if` condition. 
+
+Which approach is best?
 
 
 # Written questions
