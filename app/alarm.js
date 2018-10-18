@@ -37,7 +37,40 @@ function snooze() {
   return snoozeAttempts;
 }
 
+function announceNames() {
+
+    let firstNames = [];
+    peopleThatHaveUsedAlarm.forEach(function(person) {
+        firstNames.push(person.name);
+    });
+
+    return firstNames;
+}
+
+function tellMeALie() {
+    let peopleWithOneHourExtra = peopleThatHaveUsedAlarm.map(function(person) {
+        return {
+            name: person.name,
+            wakeUpTime: person.wakeUpTime + 1
+        };
+    });
+
+    return peopleWithOneHourExtra;
+}
+
+function getTheEarlyRisers() {
+
+    let earlyRisers = peopleThatHaveUsedAlarm.filter(function(person) {
+        return person.wakeUpTime < 9;
+    });
+
+    return earlyRisers;
+}
+
 module.exports = {
-  wakeup,
-  snooze
+    wakeup,
+    snooze,
+    announceNames,
+    tellMeALie,
+    getTheEarlyRisers
 };
