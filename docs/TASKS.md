@@ -54,6 +54,26 @@ Convert the wakeup function to a switch statement instead of using an `if` condi
 
 Which approach is best?
 
+## 7) Announce all the names of people that have used the alarm
+
+The alarm records the information of everyone that has used it. You'll see this in an array call `peopleThatHaveUsedAlarm`.
+
+Using the `forEach` function, get the alarm to return the first names of everyone that has used the alarm. 
+
+You'll need to write a test to do this as well.
+
+## 8) Tell a lie
+
+The alarm has started to lie about the wakeup times. Use the `map` function to return a list of people that have used the alarm but add 1 hour to the wakeup time.
+
+You'll need to write a test to do this as well.
+
+## 9) Favouring the early risers
+
+The CEO of your business wants to give pay rises to everyone that wakes up early. She would like the information about everyone that has woken up before 9AM. Using `filter` create a function that will provide this information.
+
+You'll need to write a test to do this as well.
+
 
 # Written questions
 

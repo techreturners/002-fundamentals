@@ -1,3 +1,8 @@
+const peopleThatHaveUsedAlarm = [ { name: "James", wakeUpTime: 7 },
+                                  { name: "Susan", wakeUpTime: 13 },
+                                  { name: "Geoff", wakeUpTime: 14 },
+                                  { name: "Lisa", wakeUpTime: 6 }];
+
 function wakeup(currentTime) {
     // currentTime will be a Javascript Date object
     // https://www.w3schools.com/jsref/jsref_obj_date.asp
