@@ -2,11 +2,11 @@
 
 **Note**
 
-Where applicable, try to do the coding tasks with [ping pong pair programming](http://wiki.c2.com/?PairProgrammingPingPongPattern). 
+Where applicable, try to do the coding tasks with [ping pong pair programming](http://wiki.c2.com/?PairProgrammingPingPongPattern).
 
-For example, in your pairs, person A could do task 2, observe that the test fails because task 3 has not been completed. 
+For example, in your pairs, person A could do task 2, observe that the test fails because task 3 has not been completed.
 
-Person B then implements the code for task 3. 
+Person B then implements the code for task 3.
 
 You then re-run the test and find that it passes.
 
@@ -50,7 +50,7 @@ Convert the snooze function to use a `while` loop instead of a `for` loop.
 
 ## 6) 'Switch' out your approach
 
-Convert the wakeup function to a switch statement instead of using an `if` condition. 
+Convert the wakeup function to a switch statement instead of using an `if` condition.
 
 Which approach is best?
 
@@ -58,28 +58,29 @@ Which approach is best?
 
 The alarm records the information of everyone that has used it. You'll see this in an array call `peopleThatHaveUsedAlarm`.
 
-Using the `forEach` function, get the alarm to return the first names of everyone that has used the alarm. 
+Using the `forEach` function, get the alarm to return the first names of everyone that has used the alarm. You will need to create a new function for this functionality. Think of a sensible name for your function, noting that function names are ofteb verbs (or include verbs).
 
 You'll need to write a test to do this as well.
 
 ## 8) Tell a lie
 
-The alarm has started to lie about the wakeup times. Use the `map` function to return a list of people that have used the alarm but add 1 hour to the wakeup time.
+The alarm has started to lie about the wakeup times. Create a new function and use the `map` function to return a list of people that have used the alarm but add 1 hour to the wakeup time. The function should return an array of strings in the format:
+
+`["James wakes up at 9am"]`
 
 You'll need to write a test to do this as well.
 
 ## 9) Favouring the early risers
 
-The CEO of your business wants to give pay rises to everyone that wakes up early. She would like the information about everyone that has woken up before 9AM. Using `filter` create a function that will provide this information.
+The CEO of your business wants to give pay rises to everyone that wakes up early. She would like the information about everyone that has woken up before 9AM. Create a new function and use `filter` to provide this information. The function should return an array of names of everyone who wakes up before 9am.
 
 You'll need to write a test to do this as well.
-
 
 # Written questions
 
 The following questions are intended to be answered with written answers (no coding required) and should re-enforce some of the learning you have completed.
 
-1) What might happen if we just created the date as a new date (every time) in the wakeup function? Why does this make it difficult to test the function?
+1. What might happen if we just created the date as a new date (every time) in the wakeup function? Why does this make it difficult to test the function?
 
 So the code might look like this:
 
@@ -96,5 +97,3 @@ function wakeup() {
     }
 }
 ```
-
-
