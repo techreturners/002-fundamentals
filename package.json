@@ -19,6 +19,6 @@
   "homepage": "https://github.com/techreturners/002-fundamentals#readme",
   "devDependencies": {
     "eslint": "^5.15.3",
-    "jest": "23.6.0"
+    "jest": "^24.5.0"
   }
 }
