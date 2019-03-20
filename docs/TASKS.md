@@ -70,7 +70,7 @@ Using the `forEach` function, get the alarm to return the first names of everyon
 
 NB Do you know how to access properties in an object? You may need to google this to find out how to access the names of each person who has used the alarm!
 
-You'll need to write a test for this as well.
+You'll need to write a test for this as well. When testing that items in an array are equal, you should use the `toEqual` testing method instead of `toBe`. `toEqual` tests the actual values **inside** the array.
 
 ## 9) Convert to map!
 
